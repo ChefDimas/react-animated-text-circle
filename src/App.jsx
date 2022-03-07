@@ -5,12 +5,12 @@ class NavBar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav classNameName="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a classNameName="navbar-brand" href="/#">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a className="navbar-brand" href="/#">
             My app
           </a>
           <button
-            className="navbar-toggler"
+            class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -18,12 +18,12 @@ class NavBar extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
                 <a className="nav-link" href="/#">
                   Home
                 </a>
