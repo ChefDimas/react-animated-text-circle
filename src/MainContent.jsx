@@ -81,12 +81,22 @@ class MainContent extends Component {
 
   // Function for creating new row for a new customer
   getCustomerRow = () => {
-    return this.state.customers.map((cust) => {
+    return this.state.customers.map((cust, index) => {
       return (
         <tr key={cust.id}>
           <td>{cust.id}</td>
           <td>
             <img src={cust.photo} alt="Customer" />
+            <div>
+              <button
+                className="btn btn-sm btn-secondary my-2"
+                onClick={() => {
+                  this.onChangePictureClick(cust, index);
+                }}
+              >
+                Change Picture
+              </button>
+            </div>
           </td>
           <td>{cust.name}</td>
           <td>{this.getPhoneToRender(cust.phone)}</td>
@@ -95,6 +105,8 @@ class MainContent extends Component {
       );
     });
   };
+
+  onChangePictureClick = (cust, index) => {};
 }
 
 export default MainContent;
