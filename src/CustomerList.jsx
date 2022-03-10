@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class MainContent extends Component {
+class CustomerList extends Component {
   state = {
     pageTitle: "Customers",
     customersCount: 5,
@@ -105,8 +105,14 @@ class MainContent extends Component {
       );
     });
   };
-
-  onChangePictureClick = (cust, index) => {};
+  // Receives the customer object and index of the currently clicked customer
+  onChangePictureClick = (cust, index) => {
+    // Get existing customers
+    var custArr = this.state.customers;
+    custArr[index].photo = "https://picsum.photos/id/1022/60";
+    //Update Customers array in the state
+    this.setState({ customers: custArr });
+  };
 }
 
-export default MainContent;
+export default CustomerList;
