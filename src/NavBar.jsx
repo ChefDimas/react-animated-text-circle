@@ -7,7 +7,7 @@ class NavBar extends Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <a className="navbar-brand" href="/#">
-            My app
+            eCommerce
           </a>
           <button
             className="navbar-toggler"
