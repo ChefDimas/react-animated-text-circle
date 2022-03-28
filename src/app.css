@@ -24,3 +24,7 @@ section .text{
     user-select: none;
     pointer-events: none;
 }
+
+section .text span{
+    display: inline-block;
+}
