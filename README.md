@@ -1,3 +1,1 @@
-My first e-commerce react app development. :)
-
-E-commerce website created using react framework, bootstrap framework.
+This is a react component with custom animated circle
