@@ -1,14 +1,17 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./app.css";
+function App() {
+  const [count, setCount] = useState(0);
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <section>
-          <h2 className="text">A</h2>
-        </section>
-      </div>
-    );
-  }
+  useEffect(() => {
+    document.title = `Вы нажали ${count} раз`;
+  });
+  return (
+    <div>
+      <p>Вы нажали {count} раз</p>
+      <button onClick={() => setCount(count + 1)}>Нажми на меня</button>
+    </div>
+  );
 }
+
+export default App;
